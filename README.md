@@ -61,10 +61,14 @@ cd AI-FORM-FILLING-ASSISTANT
 
 #### 2️⃣ Create Virtual Environment
 ```bash
-Copy code
+Copy code:
+
 python -m venv venv
+
 venv\Scripts\activate
 ```
+- terminal should display something like this: (venv) PS D:\Intel\ai-form-filling-assistant>
+- then run: cd backend
 
 #### 3️⃣ Install Dependencies
 ```bash
@@ -112,7 +116,7 @@ Copy code
 frontend/index.html
 ```
 - use live server by downloading it in extensions
-- right click on indexx.html and click open with live server
+- right click on index.html and click open with live server
 
 #### 📡 API Endpoints
 - GET /health – Health check
