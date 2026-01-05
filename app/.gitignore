@@ -9,7 +9,6 @@ __pycache__/
 
 # Uploaded & generated files
 uploads/
-output/
 
 # OS / editor files
 .DS_Store
