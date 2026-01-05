@@ -115,51 +115,38 @@ frontend/index.html
 
 #### 📡 API Endpoints
 - GET /health – Health check
-
 - POST /process?template=standard – Process document
-
 - GET /templates – Available form templates
-
 - GET /download/{session_id} – Download filled PDF
-
 - POST /auto-fill-govt-form – Prefilled government form links
 
 #### 📄 Supported Forms
 - Aadhaar
-
 - PAN
-
 - Passport
-
 - Voter ID
-
 - Income Tax
-
 - Driving Licence
 
 #### 🧠 Extraction Strategy
 - Regex-based ID detection
-
 - NLP (NER) for name extraction
-
 - Heuristic multi-line address detection
-
 - Works even when labels are missing or reordered
 
 #### 🔒 Privacy
 - No permanent file storage
-
 - Temporary files auto-deleted
-
 - Sensitive folders ignored via .gitignore
 
 #### 📌 Future Improvements
-
 - OCR language expansion (Hindi, Assamese)
 - Online PDF form auto-filling
 - Authentication & user sessions
 - ML-based address segmentation
 - Cloud deployment (Docker / AWS)
 
+## License
+This project is licensed under the MIT License.
 
 
