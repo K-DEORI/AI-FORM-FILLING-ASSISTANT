@@ -19,37 +19,7 @@ Built using **FastAPI, OCR (Tesseract), NLP (spaCy)** with robust, label-indepen
 
 ---
 
-## 🏗️ Project Structure
 
-ai-form-filling-assistant/
-│
-├── backend/
-│ ├── app/
-│ │ ├── main.py
-│ │ ├── ocr.py
-│ │ ├── ner.py
-│ │ ├── utils.py
-│ │ ├── form_mapper.py
-│ │ └── voice.py
-│ ├── requirements.txt
-│
-├── frontend/
-│ ├── index.html
-│ ├── style.css
-│ └── script.js
-│
-├── uploads/ # ignored
-├── output/ # ignored
-├── docs/
-│
-├── README.md
-├── .gitignore
-└── venv/ # ignored
-
-yaml
-Copy code
-
----
 
 ## 🛠️ Tech Stack
 
@@ -61,7 +31,7 @@ Copy code
 ## ⚙️ Setup Instructions
 
 ### 1️⃣ Clone Repository
-```bash
+
 git clone https://github.com/K-DEORI/AI-FORM-FILLING-ASSISTANT.git
 cd AI-FORM-FILLING-ASSISTANT
 
