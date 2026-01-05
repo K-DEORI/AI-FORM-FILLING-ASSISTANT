@@ -153,5 +153,13 @@ frontend/index.html
 
 - Sensitive folders ignored via .gitignore
 
+#### 📌 Future Improvements
+
+- OCR language expansion (Hindi, Assamese)
+- Online PDF form auto-filling
+- Authentication & user sessions
+- ML-based address segmentation
+- Cloud deployment (Docker / AWS)
+
 
 
