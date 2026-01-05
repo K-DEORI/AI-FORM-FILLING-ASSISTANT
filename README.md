@@ -32,11 +32,11 @@ Built using **FastAPI, OCR (Tesseract), NLP (spaCy)** with robust, label-indepen
 
 ### 1️⃣ Clone Repository
 
-git clone https://github.com/K-DEORI/AI-FORM-FILLING-ASSISTANT.git
-cd AI-FORM-FILLING-ASSISTANT
+## git clone https://github.com/K-DEORI/AI-FORM-FILLING-ASSISTANT.git
+## cd AI-FORM-FILLING-ASSISTANT
 
 
-2️⃣ Create Virtual Environment
+### 2️⃣ Create Virtual Environment
 bash
 Copy code
 python -m venv venv
