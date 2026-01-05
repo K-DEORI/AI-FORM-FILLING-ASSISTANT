@@ -96,11 +96,10 @@ python -m spacy download en_core_web_sm
 
 #### 6️⃣ Run Backend Server
 ```bash
-Copy code
-uvicorn backend.app.main:app --reload
-Backend URL:
+Copy code and run it in terminal:
+python -m uvicorn app.main:app --reload
 
-cpp
+Backend URL:
 Copy code
 http://127.0.0.1:8000
 ```
@@ -112,6 +111,8 @@ Open the following file in your browser:
 Copy code
 frontend/index.html
 ```
+- use live server by downloading it in extensions
+- right click on indexx.html and click open with live server
 
 #### 📡 API Endpoints
 - GET /health – Health check
