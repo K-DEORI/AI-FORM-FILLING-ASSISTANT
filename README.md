@@ -28,6 +28,29 @@ Built using **FastAPI, OCR (Tesseract), NLP (spaCy)** with robust, label-indepen
 
 ---
 
+## Dependencies
+
+All Python dependencies are listed in `backend/requirements.txt`.
+
+### Core Backend
+- **FastAPI** – REST API framework
+- **Uvicorn** – ASGI server
+- **python-multipart** – File upload handling
+
+### OCR & Document Processing
+- **pytesseract** – OCR engine wrapper
+- **Pillow** – Image processing
+- **pdfplumber** – PDF text extraction
+
+### NLP & AI
+- **spaCy** – Named Entity Recognition (NER)
+- **whisper** – Optional speech-to-text support (future-ready)
+
+### Document Generation
+- **reportlab** – Generate filled PDF forms
+
+---
+
 ## ⚙️ Setup Instructions
 
 #### 1️⃣ Clone Repository
