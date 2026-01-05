@@ -31,29 +31,29 @@ Built using **FastAPI, OCR (Tesseract), NLP (spaCy)** with robust, label-indepen
 ## ⚙️ Setup Instructions
 
 ### 1️⃣ Clone Repository
-
-## git clone https://github.com/K-DEORI/AI-FORM-FILLING-ASSISTANT.git
-## cd AI-FORM-FILLING-ASSISTANT
-
+```bash
+git clone https://github.com/K-DEORI/AI-FORM-FILLING-ASSISTANT.git
+cd AI-FORM-FILLING-ASSISTANT
+```
 
 ### 2️⃣ Create Virtual Environment
-bash
+```bash
 Copy code
 python -m venv venv
 venv\Scripts\activate
+```
 
-
-3️⃣ Install Dependencies
-bash
+### 3️⃣ Install Dependencies
+```bash
 Copy code
 pip install -r backend/requirements.txt
+```
 
-
-4️⃣ Install Tesseract OCR (Windows)
+### 4️⃣ Install Tesseract OCR (Windows)
 Download from:
 https://github.com/UB-Mannheim/tesseract/wiki
 
-Install path:
+#### Install path:
 
 makefile
 Copy code
@@ -65,14 +65,14 @@ Copy code
 pytesseract.pytesseract.tesseract_cmd = r"C:\Program Files\Tesseract-OCR\tesseract.exe"
 
 
-5️⃣ Install spaCy Model
-bash
+### 5️⃣ Install spaCy Model
+```bash
 Copy code
 python -m spacy download en_core_web_sm
+```
 
-
-6️⃣ Run Backend Server
-bash
+### 6️⃣ Run Backend Server
+```bash
 Copy code
 uvicorn backend.app.main:app --reload
 Backend URL:
@@ -80,55 +80,55 @@ Backend URL:
 cpp
 Copy code
 http://127.0.0.1:8000
+```
 
-
-7️⃣ Open Frontend
+### 7️⃣ Open Frontend
 Open the following file in your browser:
 
-bash
+```bash
 Copy code
 frontend/index.html
+```
 
+### 📡 API Endpoints
+- GET /health – Health check
 
-📡 API Endpoints
-GET /health – Health check
+- POST /process?template=standard – Process document
 
-POST /process?template=standard – Process document
+- GET /templates – Available form templates
 
-GET /templates – Available form templates
+- GET /download/{session_id} – Download filled PDF
 
-GET /download/{session_id} – Download filled PDF
+- POST /auto-fill-govt-form – Prefilled government form links
 
-POST /auto-fill-govt-form – Prefilled government form links
+### 📄 Supported Forms
+- Aadhaar
 
-📄 Supported Forms
-Aadhaar
+- PAN
 
-PAN
+- Passport
 
-Passport
+- Voter ID
 
-Voter ID
+- Income Tax
 
-Income Tax
+- Driving Licence
 
-Driving Licence
+### 🧠 Extraction Strategy
+- Regex-based ID detection
 
-🧠 Extraction Strategy
-Regex-based ID detection
+- NLP (NER) for name extraction
 
-NLP (NER) for name extraction
+- Heuristic multi-line address detection
 
-Heuristic multi-line address detection
+- Works even when labels are missing or reordered
 
-Works even when labels are missing or reordered
+### 🔒 Privacy
+- No permanent file storage
 
-🔒 Privacy
-No permanent file storage
+- Temporary files auto-deleted
 
-Temporary files auto-deleted
-
-Sensitive folders ignored via .gitignore
+- Sensitive folders ignored via .gitignore
 
 
 
