@@ -30,30 +30,30 @@ Built using **FastAPI, OCR (Tesseract), NLP (spaCy)** with robust, label-indepen
 
 ## ⚙️ Setup Instructions
 
-### 1️⃣ Clone Repository
+#### 1️⃣ Clone Repository
 ```bash
 git clone https://github.com/K-DEORI/AI-FORM-FILLING-ASSISTANT.git
 cd AI-FORM-FILLING-ASSISTANT
 ```
 
-### 2️⃣ Create Virtual Environment
+#### 2️⃣ Create Virtual Environment
 ```bash
 Copy code
 python -m venv venv
 venv\Scripts\activate
 ```
 
-### 3️⃣ Install Dependencies
+#### 3️⃣ Install Dependencies
 ```bash
 Copy code
 pip install -r backend/requirements.txt
 ```
 
-### 4️⃣ Install Tesseract OCR (Windows)
+#### 4️⃣ Install Tesseract OCR (Windows)
 Download from:
 https://github.com/UB-Mannheim/tesseract/wiki
 
-#### Install path:
+##### Install path:
 
 makefile
 Copy code
@@ -65,13 +65,13 @@ Copy code
 pytesseract.pytesseract.tesseract_cmd = r"C:\Program Files\Tesseract-OCR\tesseract.exe"
 
 
-### 5️⃣ Install spaCy Model
+#### 5️⃣ Install spaCy Model
 ```bash
 Copy code
 python -m spacy download en_core_web_sm
 ```
 
-### 6️⃣ Run Backend Server
+#### 6️⃣ Run Backend Server
 ```bash
 Copy code
 uvicorn backend.app.main:app --reload
@@ -82,7 +82,7 @@ Copy code
 http://127.0.0.1:8000
 ```
 
-### 7️⃣ Open Frontend
+#### 7️⃣ Open Frontend
 Open the following file in your browser:
 
 ```bash
@@ -90,7 +90,7 @@ Copy code
 frontend/index.html
 ```
 
-### 📡 API Endpoints
+#### 📡 API Endpoints
 - GET /health – Health check
 
 - POST /process?template=standard – Process document
@@ -101,7 +101,7 @@ frontend/index.html
 
 - POST /auto-fill-govt-form – Prefilled government form links
 
-### 📄 Supported Forms
+#### 📄 Supported Forms
 - Aadhaar
 
 - PAN
@@ -114,7 +114,7 @@ frontend/index.html
 
 - Driving Licence
 
-### 🧠 Extraction Strategy
+#### 🧠 Extraction Strategy
 - Regex-based ID detection
 
 - NLP (NER) for name extraction
@@ -123,7 +123,7 @@ frontend/index.html
 
 - Works even when labels are missing or reordered
 
-### 🔒 Privacy
+#### 🔒 Privacy
 - No permanent file storage
 
 - Temporary files auto-deleted
