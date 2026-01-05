@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Form Filling Assistant</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>🧠 AI Form Filling Assistant</h1>
+        <p>Upload Aadhaar/PAN → Auto-fill template-specific forms</p>
+    </header>
+
+
+    <main class="container">
+        <section class="card upload-card">
+            <h2>📤 Upload Document</h2>
+            <p class="muted">JPG, PNG, PDF • Drag & drop</p>
+            <div id="uploadArea" class="upload-area">
+                <div class="upload-icon">📎</div>
+                <p>Click or drag document</p>
+                <input type="file" id="fileInput" accept="image/*,.pdf">
+            </div>
+            <button id="uploadBtn">Process Document</button>
+            <div id="status" class="status"></div>
+        </section>
+
+
+        <section class="card">
+            <h2>📋 Form Template <span id="templateFieldsCount"></span></h2>
+            <select id="templateSelect">
+                <option value="standard" data-fields="6">📄 Standard Form (6 fields)</option>
+                <option value="aadhaar" data-fields="4">🆔 Aadhaar Form (4 fields)</option>
+                <option value="pan" data-fields="5">💳 PAN Form (5 fields)</option>
+            </select>
+        </section>
+
+
+        <section class="card" id="resultsSection" style="display: none;">
+            <div class="results-header">
+                <h2>✅ Results for <span id="activeTemplateName">Standard Form</span></h2>
+                <div class="button-group">
+                    <button id="downloadBtn">📥 Download PDF</button>
+                    <button id="newFileBtn">🔄 New File</button>
+                </div>
+            </div>
+
+
+            <div class="form-grid" id="dynamicFieldsContainer">
+                <!-- Dynamic fields populated by JavaScript -->
+            </div>
+
+
+            <div class="doc-info">
+                <div id="docInfo"></div>
+            </div>
+        </section>
+
+
+        <section class="card" id="debugSection" style="display: none;">
+            <h2>🔧 Debug</h2>
+            <pre id="output">{}</pre>
+        </section>
+    </main>
+
+
+    <footer><p>© 2026 AI Form Filling Assistant</p></footer>
+    <script src="script.js"></script>
+</body>
+</html> 
