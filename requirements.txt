@@ -1,0 +1,9 @@
+fastapi
+uvicorn
+python-multipart
+pytesseract
+pillow
+pdfplumber
+spacy
+reportlab
+whisper
