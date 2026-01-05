@@ -70,7 +70,7 @@ venv\Scripts\activate
 - terminal should display something like this: (venv) PS D:\Intel\ai-form-filling-assistant>
 - then run: cd backend
 
-![demo video](./screenshots/Untitled design.gif)
+![Image](https://github.com/user-attachments/assets/ea1418d1-403f-4692-9d6c-b25c5a0bea4b)
 
 #### 3️⃣ Install Dependencies
 ```bash
