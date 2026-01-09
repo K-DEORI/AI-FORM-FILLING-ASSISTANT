@@ -1,4 +1,4 @@
-# 🧠 AI Form Filling Assistant Pro
+#  AI Form Filling Assistant
 
 An AI-powered system that extracts personal information from scanned documents (PDFs / Images) and auto-fills Indian government form data such as Aadhaar, PAN, Passport, Voter ID, Income Tax, and Driving Licence.
 
@@ -156,5 +156,5 @@ frontend/index.html
 ## License
 This project is licensed under the MIT License.
 
-### Author
+
 
